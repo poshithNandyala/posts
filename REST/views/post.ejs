@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Post</title>
+    <style>
+        .post {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+
+        .post h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .post p {
+            color: #666;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="post">
+        <h3>@<%= post.username %>
+        </h3>
+        <p>
+            <%= post.content %>
+        </p>
+    </div>
+</body>
+
+</html>
